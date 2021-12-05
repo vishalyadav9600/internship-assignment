@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>User Account Details</h1>
+    <form action="/post-feedback" method="post" enctype="multipart/form-data">
+        User ID <input type="text" name="userid"><br>
+        Password <input type="password" name="password"><br>
+        Name <input type="text" name="name"><br>
+        Gender <input type="radio" value="Male" name="gender">Male
+                <input type="radio" value="Female" name="gender"> Female <br>
+        Course <select name="Choose Document">
+            <option value="Aadhar">Aadhar</option>
+            <option value="Pan Card">Pancard</option>
+            <option value="Driving License">Driving License</option>
+        </select><br>
+        Upload <input type="file"><br>
+        Address <textarea name="Address" rows="5" cols="20"></textarea><br>
+        <input type="checkbox" value="agree">I agree to the terms & conditions <br>
+        <input type="submit" value="Register">
+    </form>
+    <a href="/view-feedback">View Feedbacks</a>
+</body>
+</html>
